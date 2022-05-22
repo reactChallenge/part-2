@@ -1,8 +1,8 @@
-
+import {useState } from 'react'
 function App() {
-  let count = 0;
-  const addCount =()=>{
-    
+  const [count,setCount] = useState(0)
+  const addCount=()=>{
+    setCount(count+1)    
   }
   return (
     <div className="App">
@@ -12,5 +12,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
